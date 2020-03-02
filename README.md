@@ -23,4 +23,20 @@ Dr.MacBook
 
 在拷贝文件夹、远程访问其他系统或者外接设备的文件夹时会出现.DS_Store，这个文件你只需要知道它仅在苹果系统有用，而且没多大用就行了，具体功能可以自行搜索
 
-如果你觉得它很烦很不美观，那么怎么办呢？[请看这个](https://github.com/scp404/Dr.MacBook/blob/master/rm.DS_Store.sh)
+如果你觉得它很烦很不美观，那么怎么办呢？
+
+处理方法：[请看这个](https://github.com/scp404/Dr.MacBook/blob/master/rm.DS_Store.sh)
+
+---
+
+**便笺数据丢失**
+
+这个是在更新到macOS Catalina 10.15.3时候发现的，之前保存了重要数据在便笺里，今天一打开就剩下一张空白便笺，重开了几次还是这样，当场心肺停止。
+
+别急，这个是可以恢复的，主要目录在
+> ~/Library/Containers/com.apple.Stickies/Data/Library/Stickies
+
+这个目录里面有很多随机名称文件夹，大概是用来存放各个便笺数据的，里面的TXT.rtf就是文本数据
+我在处理方法的脚本里只实现里还原文本数据的功能，原理就是把这些rtf拷贝出来，但是只能用*文本编辑.app*查看
+
+处理方法：[请看这个](https://github.com/scp404/Dr.MacBook/blob/master/find_sticky.sh)
