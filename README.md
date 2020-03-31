@@ -15,7 +15,7 @@ Dr.Mac
 
 这是一个不常见的情况，我也是长时间使用中遇到了几次之后才确认的，一开始以为是切换键下面有灰尘所以按键失灵了，但是我的笔记本是安装有虚拟机的，在虚拟机中切换居然是可以的，真是费解
 
-处理方法：重启进程 *TISwitcher*（catalina中进程名称是*TextInputSwitcher*）
+处理方法：重启进程 *TISwitcher*（catalina中需要重启的进程名称是*TextInputSwitcher*和*TextInputMenuAgent*）
 
 ---
 
