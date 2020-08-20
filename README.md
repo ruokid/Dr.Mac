@@ -12,6 +12,9 @@ Dr.Mac
 $ sudo rm -rf $(xcode-select -print-path)
 $ xcode-select --install
 ```
+第一条命令会要求输入密码，第二条命令会弹出一个窗口，点击下载
+
+---
 
 **没有声音**
 
