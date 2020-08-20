@@ -3,6 +3,16 @@ Dr.Mac
 
 记录一些平时使用时发现的问题或者感觉不爽的地方
 
+**开发中的各种CommandLineTools问题**
+
+多出现在更新系统之后
+
+处理方法：
+```
+$ sudo rm -rf $(xcode-select -print-path)
+$ xcode-select --install
+```
+
 **没有声音**
 
 有时候你会发现，在系统偏好设置 -> 声音下配置都是正确的，音量也调过了，但就是没有声音
